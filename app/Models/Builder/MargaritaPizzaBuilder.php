@@ -18,7 +18,7 @@ class MargaritaPizzaBuilder implements Builder
 
     public function prepareDough()
     {
-        $this->pizza->dough = 'double';
+        $this->pizza->dough = 'thin';
     }
 
     public function addSauce()

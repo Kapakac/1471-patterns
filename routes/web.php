@@ -1,8 +1,9 @@
 <?php
 
+use App\Http\Controllers\Prototype\PrototypeController;
+use App\Http\Controllers\Builder\BuilderController;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Builder\BuilderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('/builders', [BuilderController::class, 'index']);
+Route::get('/prototypes', [PrototypeController::class, 'index']);
