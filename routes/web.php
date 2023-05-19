@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Prototype\PrototypeController;
+use App\Http\Controllers\LazyInit\LazyInitController;
 use App\Http\Controllers\Builder\BuilderController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,4 @@ Route::get('/', function () {
 
 Route::get('/builders', [BuilderController::class, 'index']);
 Route::get('/prototypes', [PrototypeController::class, 'index']);
+Route::get('/lazy-inits', [LazyInitController::class, 'index']);
