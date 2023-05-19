@@ -5,6 +5,7 @@ use App\Http\Controllers\ObjectPool\ObjectPoolController;
 use App\Http\Controllers\Prototype\PrototypeController;
 use App\Http\Controllers\LazyInit\LazyInitController;
 use App\Http\Controllers\Builder\BuilderController;
+use App\Http\Controllers\Bridge\BridgeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +28,4 @@ Route::get('/prototypes', [PrototypeController::class, 'index']);
 Route::get('/lazy-inits', [LazyInitController::class, 'index']);
 Route::get('/method-chaining', [MethodChainingController::class, 'index']);
 Route::get('/object-pool', [ObjectPoolController::class, 'index']);
+Route::get('/bridges', [BridgeController::class, 'index']);
