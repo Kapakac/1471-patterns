@@ -44,6 +44,5 @@ class FlyweightController extends Controller
         }
 
         return $result;
-
     }
 }
