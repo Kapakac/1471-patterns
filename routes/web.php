@@ -8,6 +8,7 @@ use App\Http\Controllers\LazyInit\LazyInitController;
 use App\Http\Controllers\Mediator\MediatorController;
 use App\Http\Controllers\Memento\MementoController;
 use App\Http\Controllers\Builder\BuilderController;
+use App\Http\Controllers\Visitor\VisitorController;
 use App\Http\Controllers\Bridge\BridgeController;
 use Illuminate\Support\Facades\Route;
 
@@ -35,3 +36,4 @@ Route::get('/bridges', [BridgeController::class, 'index']);
 Route::get('/fly-weights', [FlyweightController::class, 'index']);
 Route::get('/mediators', [MediatorController::class, 'index']);
 Route::get('/mementos', [MementoController::class, 'index']);
+Route::get('/visitors', [VisitorController::class, 'index']);
