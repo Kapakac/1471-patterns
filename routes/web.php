@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChainOfResponsibilities\ChainOfResponsibilityController;
 use App\Http\Controllers\MethodChaining\MethodChainingController;
 use App\Http\Controllers\ObjectPool\ObjectPoolController;
 use App\Http\Controllers\Prototype\PrototypeController;
@@ -37,3 +38,4 @@ Route::get('/fly-weights', [FlyweightController::class, 'index']);
 Route::get('/mediators', [MediatorController::class, 'index']);
 Route::get('/mementos', [MementoController::class, 'index']);
 Route::get('/visitors', [VisitorController::class, 'index']);
+Route::get('/chain-of-responsibilities', [ChainOfResponsibilityController::class, 'index']);
