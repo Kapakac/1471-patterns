@@ -10,6 +10,7 @@ use App\Http\Controllers\Mediator\MediatorController;
 use App\Http\Controllers\Memento\MementoController;
 use App\Http\Controllers\Builder\BuilderController;
 use App\Http\Controllers\Visitor\VisitorController;
+use App\Http\Controllers\Creator\CreatorController;
 use App\Http\Controllers\Bridge\BridgeController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,3 +40,4 @@ Route::get('/mediators', [MediatorController::class, 'index']);
 Route::get('/mementos', [MementoController::class, 'index']);
 Route::get('/visitors', [VisitorController::class, 'index']);
 Route::get('/chain-of-responsibilities', [ChainOfResponsibilityController::class, 'index']);
+Route::get('/creators', [CreatorController::class, 'index']);
