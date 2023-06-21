@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ChainOfResponsibilities\ChainOfResponsibilityController;
+use App\Http\Controllers\InformationExpert\InformationExpertController;
 use App\Http\Controllers\MethodChaining\MethodChainingController;
 use App\Http\Controllers\ObjectPool\ObjectPoolController;
 use App\Http\Controllers\Prototype\PrototypeController;
@@ -41,3 +42,4 @@ Route::get('/mementos', [MementoController::class, 'index']);
 Route::get('/visitors', [VisitorController::class, 'index']);
 Route::get('/chain-of-responsibilities', [ChainOfResponsibilityController::class, 'index']);
 Route::get('/creators', [CreatorController::class, 'index']);
+Route::get('/information-experts', [InformationExpertController::class, 'index']);
